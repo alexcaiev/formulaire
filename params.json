@@ -1,0 +1,6 @@
+{
+  "name": "Formulaire",
+  "tagline": "",
+  "body": "<div id=\"contact-form\">    \r\n\r\n<form id=\"contact\" method=\"post\" action=\"\">\r\n<fieldset>    \r\n\r\n<label for=\"name\">Name</label>\r\n<input type=\"text\" name=\"name\">\r\n\r\n<label for=\"email\">E-mail</label>\r\n<input type=\"email\" name=\"email\">\r\n\r\n<label for=\"phone\">Phone</label>\r\n<input type=\"text\" name=\"phone\">\r\n\r\n<label for=\"website\">Website</label>\r\n<input type=\"url\" name=\"url\">\r\n\r\n<label for=\"message\">Question/Comment</label>\r\n<textarea name=\"message\"></textarea>\r\n\r\n<input type=\"submit\" name=\"submit\" id=\"submit\" value=\"Send Message\" />\r\n\r\n</fieldset>\r\n</form>\r\n\r\n</div>",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
