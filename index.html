@@ -25,16 +25,11 @@
     <div id="content-wrapper">
       <div class="inner clearfix">
         <section id="main-content">
-          <!-- Feedback Form -->
-          <form action="#" id="form" method="post" name="form">
-          <input name="vname" placeholder="Your Name" type="text" value="">
-          <input name="vemail" placeholder="Your Email" type="text" value="">
-          <input name="sub" placeholder="Subject" type="text" value="">
-          <label>Your Suggestion/Feedback</label>
-          <textarea name="msg" placeholder="Type your text here..."></textarea>
-          <input id="send" name="submit" type="submit" value="Send Feedback">
+          <form action="https://formspree.io/alexisdnm@gmail.com" method="POST">
+            <input type="text" name="name">
+            <input type="email" name="_replyto">
+            <input type="submit" value="Send">
           </form>
-          <h3><?php include "secure_email_code.php"?></h3>
         </section>
       </div>
     </div>
