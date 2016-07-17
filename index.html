@@ -25,28 +25,18 @@
     <div id="content-wrapper">
       <div class="inner clearfix">
         <section id="main-content">
-          <div id="contact-form">
-            <form id="contact" method="post" action="mailto:alexisdnm@gmail.com">
-            
-            <label for="name">Name</label>
-            <input type="text" name="name"><br>
-            
-            <label for="email">E-mail</label>
-            <input type="email" name="email"><br>
-            
-            <label for="message">Question/Comment</label>
-            <textarea name="message"></textarea><br>
-            
-            <input type="submit" name="submit" id="submit" value="Send Message" />
-            
-            </form>
-
-          </div>
+          <!-- Feedback Form -->
+          <form action="#" id="form" method="post" name="form">
+          <input name="vname" placeholder="Your Name" type="text" value="">
+          <input name="vemail" placeholder="Your Email" type="text" value="">
+          <input name="sub" placeholder="Subject" type="text" value="">
+          <label>Your Suggestion/Feedback</label>
+          <textarea name="msg" placeholder="Type your text here..."></textarea>
+          <input id="send" name="submit" type="submit" value="Send Feedback">
+          </form>
+          <h3><?php include "secure_email_code.php"?></h3>
         </section>
-
       </div>
     </div>
-
-  
   </body>
 </html>
