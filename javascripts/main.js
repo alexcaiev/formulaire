@@ -1,1 +1,2 @@
-console.log('This would be the main JS file.');
+var contactform =  document.getElementById('contactform');
+contactform.setAttribute('action', '//formspree.io/' + 'alexisdnm' + '@' + 'gmail' + '.' + 'com');
