@@ -1,8 +1,29 @@
-<form id="contactform" method="POST">
-    <input type="text" name="name" placeholder="Nom" required />
-    <input type="email" name="_replyto" placeholder="Email" required />
-    <input type="hidden" name="_subject" value="Formulaire de Contact" />
-    <textarea name="message" placeholder="Quels sont les travaux que vous voudriez faire?"></textarea>
-    <input type="text" name="_gotcha" style="display:none" />
-    <input type="submit" value="Demander un devis">
-</form>
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- load custom font -->
+    <link href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet" type="text/css" />
+    <!-- load MUI -->
+    <link href="//cdn.muicss.com/mui-0.9.15/css/mui.min.css" rel="stylesheet" type="text/css" />
+    <script src="//cdn.muicss.com/mui-0.9.15/js/mui.min.js"></script>
+    <!-- custom font css -->
+    <style>
+      body {
+        font-family: "Roboto", "Helvetica Neue", Helvetica, Arial;
+      }
+    </style>
+  </head>
+  <body>
+    <form id="contactform" method="POST">
+        <input type="text" name="name" placeholder="Nom" required />
+        <input type="email" name="_replyto" placeholder="Email" required />
+        <input type="hidden" name="_subject" value="Formulaire de Contact" />
+        <textarea name="message" placeholder="Quels sont les travaux que vous voudriez faire?"></textarea>
+        <input type="text" name="_gotcha" style="display:none" />
+        <input type="submit" value="Demander un devis">
+    </form>
+  </body>
+</html>
