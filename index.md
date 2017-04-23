@@ -1,26 +1,12 @@
-<div id="contact-form">    
-
-<form id="contact" method="post" action="">
-<fieldset>    
-
-<label for="name">Name</label>
-<input type="text" name="name">
-
-<label for="email">E-mail</label>
-<input type="email" name="email">
-
-<label for="phone">Phone</label>
-<input type="text" name="phone">
-
-<label for="website">Website</label>
-<input type="url" name="url">
-
-<label for="message">Question/Comment</label>
-<textarea name="message"></textarea>
-
-<input type="submit" name="submit" id="submit" value="Send Message" />
-
-</fieldset>
+<form id="contactform" method="POST">
+    <input type="text" name="name" placeholder="Nom" required />
+    <input type="email" name="_replyto" placeholder="Email" required />
+    <input type="hidden" name="_subject" value="Formulaire de Contact" />
+    <textarea name="message" placeholder="Quels sont les travaux que vous voudriez faire?"></textarea>
+    <input type="text" name="_gotcha" style="display:none" />
+    <input type="submit" value="Demander un devis">
 </form>
-
-</div>
+<script>
+    var contactform =  document.getElementById('contactform');
+    contactform.setAttribute('action', '//formspree.io/' + 'alexisdnm' + '@' + 'gmail' + '.' + 'com');
+</script>
