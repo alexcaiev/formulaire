@@ -17,13 +17,23 @@
     </style>
   </head>
   <body>
-    <form id="contactform" method="POST">
+    <form class="mui-form" id="contactform" method="POST">
+        <div class="mui-textfield">
         <input type="text" name="name" placeholder="Nom" required />
+        </div>
+      
+        <div class="mui-textfield">
         <input type="email" name="_replyto" placeholder="Email" required />
+        </div>
+      
         <input type="hidden" name="_subject" value="Formulaire de Contact" />
+      
+        <div class="mui-textfield">
         <textarea name="message" placeholder="Quels sont les travaux que vous voudriez faire?"></textarea>
+        </div>
+      
         <input type="text" name="_gotcha" style="display:none" />
-        <input type="submit" value="Demander un devis">
-    </form>
+        <button type="submit" value="Demander un devis" class="mui-btn mui-btn--raised">Submit</button>
+    </form>    
   </body>
 </html>
